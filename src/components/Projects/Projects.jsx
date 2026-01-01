@@ -31,7 +31,7 @@ const Projects = () => {
       </div>
 
       {/**Projects Grid */}
-      <div className="grid gap-12 grid-cols-1 [@media(min-width:900px)_and_(max_width:1159px)]:grid-cols-2 [@media(min-width:1200px)]:grid-cols-3 w-full h-full">
+      <div className="grid gap-12 grid-cols-1 [@media(min-width:900px)_and_(max-width:1159px)]:grid-cols-2 [@media(min-width:1200px)]:grid-cols-3 w-full h-full">
         {projects.map((project) =>
           <div key={project.id}
             onClick={() => handleOpenModal(project)}
