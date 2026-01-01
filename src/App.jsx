@@ -1,0 +1,41 @@
+import Header from "./components/Header/Header"
+import About from "./components/About/About"
+import Skills from "./components/Skills/Skills"
+// import Experience from "./components/Experience/Experience"
+import Projects from "./components/Projects/Projects"
+import Education from "./components/Education/Education"
+import Contact from "./components/Contact/Contact"
+import Footer from "./components/Footer/Footer"
+import BlurBlob from "./BlurBlob"
+
+function App() {
+
+  return (
+    <div className="bg-[#050414]">
+      <BlurBlob
+        position={{top: '35%', left: '20%'}} 
+        size={{width: '30%', height: '40%'}}      
+      >
+      </BlurBlob>
+      <div className="
+          absolute inset-0
+          bg-[linear-gradient(to_right,#4f4f4f2e_3px,transparent_3px),linear-gradient(to_bottom,#4f4f4f2e_3px,transparent_3px)]
+          bg-size-[14px_24px] mask-b-to-90
+        "
+      >
+      </div>
+      <div className="relative pt-20">
+        <Header />
+        <About />
+        <Skills />
+        {/* <Experience /> */}
+        <Projects />
+        <Education />
+        <Contact />
+        <Footer />
+      </div>
+    </div>
+  )
+}
+
+export default App

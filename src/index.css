@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.cursor-blink {
+  animation: blink 0.7s steps(1) infinite;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=TASA+Explorer:wght@400..800&display=swap');
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
